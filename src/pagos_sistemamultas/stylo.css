@@ -1,0 +1,11 @@
+ Pane{
+ 	-fx-background-color: #92D050;
+ 	}
+
+        Button{
+  	-fx-background-color: #92D050;           
+        }
+        
+.output .text-field {
+         -fx-prompt-text-fill:red; // or any color you want
+}

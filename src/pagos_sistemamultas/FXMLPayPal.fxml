@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="361.0" prefWidth="437.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pagos_sistemamultas.FXMLPayPalController">
+   <children>
+      <Label layoutX="14.0" layoutY="12.0" text="Pague con su cuenta PayPal" textFill="#1c08f8">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="281.0" layoutY="15.0">
+         <image>
+            <Image url="@../image/carrito.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbtotal" layoutX="315.0" layoutY="16.0" prefHeight="25.0" prefWidth="75.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="64.0" text="Correo electronico">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfcorreo" layoutX="14.0" layoutY="91.0" prefHeight="25.0" prefWidth="196.0" promptText="example@gmail.com" />
+      <Label layoutX="17.0" layoutY="153.0" text="Contraseña">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnpagarcon" layoutX="112.0" layoutY="243.0" mnemonicParsing="false" onMouseClicked="#validaCuenta" style="-fx-background-color: #EBCA1E;" text="Pagar con PayPal" textFill="#272728">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <PasswordField fx:id="pfpass" layoutX="14.0" layoutY="181.0" prefHeight="25.0" prefWidth="196.0" promptText="solo caracteres alfanumericos y -_" />
+      <ImageView fx:id="imgregresa" fitHeight="50.0" fitWidth="65.0" layoutX="373.0" layoutY="297.0" onMouseClicked="#regresaVentana" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/flecha.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="215.0" fitWidth="183.0" layoutX="240.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/spp.jpeg" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="hlregistra" layoutX="15.0" layoutY="244.0" onAction="#registra" style="-fx-background-color: #EBCA1E;" text="Registrarce" textFill="#140202">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>
