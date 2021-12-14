@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="361.0" prefWidth="437.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pagos_sistemamultas.FXMLPagosVistaController">
+   <children>
+      <Pane fx:id="panetitulo" prefHeight="80.0" prefWidth="437.0" style="-fx-background-color: #92D050;">
+         <children>
+            <Label fx:id="lbtitulo" layoutX="22.0" layoutY="23.0" text="Pago en Línea">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="lbtitular" layoutX="20.0" layoutY="94.0" text="Nombre del Titular:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tftitular" layoutX="21.0" layoutY="120.0" promptText="Nombre completo" />
+      <TextField fx:id="tftarjeta" layoutX="202.0" layoutY="120.0" prefHeight="25.0" prefWidth="143.0" promptText="xxxx-xxxx-xxxx-xxxx" />
+      <TextField fx:id="tfanio" layoutX="108.0" layoutY="202.0" prefHeight="25.0" prefWidth="62.0" promptText="Año" />
+      <Label fx:id="tffolio" layoutX="21.0" layoutY="171.0" text="Fecha de Vencimiento:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbcvv" layoutX="202.0" layoutY="171.0" text="CVV">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnpagar" layoutX="257.0" layoutY="302.0" mnemonicParsing="false" onMouseClicked="#validarTarjeta" prefHeight="35.0" prefWidth="81.0" style="-fx-background-color: #92D050;" text="Pagar">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbtarjeta" layoutX="202.0" layoutY="94.0" text="Numero de Tarjeta:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="72.0" fitWidth="105.0" layoutX="21.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/mc.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="95.0" layoutX="123.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/v.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="pfcvv" layoutX="202.0" layoutY="202.0" prefHeight="25.0" prefWidth="50.0" promptText="xxx" />
+      <ChoiceBox fx:id="tfmes" layoutX="21.0" layoutY="202.0" prefHeight="25.0" prefWidth="72.0" />
+      <ImageView fx:id="imgregresa" fitHeight="42.0" fitWidth="43.0" layoutX="380.0" layoutY="304.0" onMouseClicked="#regresaVentana" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/flecha.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="293.0" layoutY="171.0" text="Cargo:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbmonto" layoutX="290.0" layoutY="206.0" prefHeight="25.0" prefWidth="81.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

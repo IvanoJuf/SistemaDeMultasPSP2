@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="361.0" prefWidth="437.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pagos_sistemamultas.FXMLFormadePagoController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="80.0" prefWidth="437.0" style="-fx-background-color: #92D050;">
+         <children>
+            <Label layoutX="20.0" layoutY="23.0" text="Forma De Pago">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="86.0" fitWidth="92.0" layoutX="14.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/paypal.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="97.0" layoutX="23.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/tarjeta.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="rbtnpaypal" layoutX="132.0" layoutY="125.0" mnemonicParsing="false" text="Pago por paypal">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgselected" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbtntc" layoutX="132.0" layoutY="233.0" mnemonicParsing="false" text="Pago con Tarjeta de Crédito" toggleGroup="$tgselected">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="btnpago" layoutX="343.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#seleccionaPago" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #92D050;" text="Aceptar">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
